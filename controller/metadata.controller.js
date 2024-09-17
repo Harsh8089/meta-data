@@ -49,7 +49,7 @@ const getMetaData = async(req, res) => {
 
         const metadata = await metaData.findById(id);
 
-        if(!metaData) {
+        if(!metadata) {
             res.status(404).json({
                 success: false,
                 error: "id is missing in db to create a new token"
