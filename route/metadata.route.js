@@ -7,6 +7,6 @@ import {
 const router = Router()
 
 router.route('/create-metadata').post(handleMetaData)
-router.route('/get-metadata.json').post(getMetaData)
+router.route('/get-metadata.json').get(getMetaData)
 
 export default router
