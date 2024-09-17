@@ -56,7 +56,7 @@ const getMetaData = async(req, res) => {
             })
         }
 
-        await metaData.findByIdAndDelete(id);
+        // await metaData.findByIdAndDelete(id);
 
         res.json({
             name: metadata.name,
