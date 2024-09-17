@@ -39,7 +39,7 @@ const handleMetaData = async(req, res) => {
 
 const getMetaData = async(req, res) => {
     try {
-        const { id } = req.body;
+        const { id } = req.query;
         if(!id) {
             res.status(404).json({
                 success: false,
